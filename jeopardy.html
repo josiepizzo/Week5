@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeopardy</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- linking CSS -->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="blue" id="qscreen" onclick="$(this).fadeOut('slow');" style="padding-top: 445.5px; display: block;">
+<div style="margin-top:-10%">
+<h1 style="font-size:100px;"><span style="font-family:times;font-size:200px;">J</span>EOPARDY!</h1>
+</div>
+</div>
+
+<div class = 'container'>
+
+<!--FIRST COLUMN STUDENT -->
+	<div class = 'col'> 					
+		<div class = 'col-md-2' id=catagories>
+			<div class = "cell">
+				<div class="inner-cell">
+					<span class="colHead">Student</span>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2 question' id ='q1' data-answer="Who is Josie">
+			<div class = "cell">
+				<div id="inner-cell" onclick="innerCell(this)">
+					<p id="cell dollar">$100</p>
+					<p id="question">The woman who doesn't like to be called Judith.</p>
+					<p id="answer">Who is Josie?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q2'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$200</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q3'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$300</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q4'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$400</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q5'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$500</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>						
+
+	</div>
+
+<!--SECOND COLUMN TEACHER -->
+	<div class = 'col2'>
+		<div class = 'col-md-2' id=catagories>
+			<div class = "cell">
+				<div class="inner-cell">
+					<span class="colHead">Teacher</span>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q1'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$100</p>
+					<p class="question">Looks youner then he is.</p>
+					<p class="answer">Who is Mat?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q2'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$200</p>
+					<p class="question">The Saturday class teacher.</p>
+					<p class="answer">Who is Jesse?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q3'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$300</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q4'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$400</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q5'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$500</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>						
+
+	</div>
+
+<!--THIRD COLUMN HTML -->
+	<div class = 'col3'>
+		<div class = 'col-md-2' id=catagories>
+			<div class = "cell">
+				<div class="inner-cell">
+					<span class="colHead">HTML</span>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q1'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$100</p>
+					<p class="question">The accronym for the File Transfer Protocol of the Web.</p>
+					<p class="answer">Who is HTTP?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q2'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$200</p>
+					<p class="question">This person invented the web.</p>
+					<p class="answer">Who is Al Gore? Only Kidding!</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q3'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$300</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q4'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$400</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q5'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$500</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>						
+	</div>
+
+<!--FOURTH COLUMN CSS -->
+	<div class = 'col4'>
+		<div class = 'col-md-2' id=catagories>
+			<div class = "cell">
+				<div class="inner-cell">
+					<span class="colHead">CSS</span>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q1'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$100</p>
+					<p class="question">The element for paragraph.</p>
+					<p class="answer">What is p{}?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q2'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$200</p>
+					<p class="question">The Saturday class teacher.</p>
+					<p class="answer">Who is Jesse?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q3'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$300</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q4'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$400</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q5'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$500</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>						
+
+	</div>
+
+<!--FIFTH COLUMN JAVASCRIPT -->
+	<div class = 'col5'>
+		<div class = 'col-md-2' id=catagories>
+			<div class = "cell">
+				<div class="inner-cell">
+					<span class="colHead">jScript</span>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q1'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$100</p>
+					<p class="question">The element for paragraph.</p>
+					<p class="answer">What is p{}?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q2'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$200</p>
+					<p class="question">The Saturday class teacher.</p>
+					<p class="answer">Who is Jesse?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q3'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$300</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q4'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$400</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q5'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$500</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>						
+
+	</div>
+
+<!--SIXTH COLUMN JQUERY -->
+	<div class = 'col6'>
+		<div class = 'col-md-2' id=catagories>
+			<div class = "cell">
+				<div class="inner-cell">
+					<span class="colHead">jQuery</span>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q1'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$100</p>
+					<p class="question">The element for paragraph.</p>
+					<p class="answer">What is p{}?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q2'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$200</p>
+					<p class="question">The Saturday class teacher.</p>
+					<p class="answer">Who is Jesse?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q3'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$300</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q4'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$400</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>
+
+		<div class = 'col-md-2' id ='q5'>
+			<div class = "cell">
+				<div class="inner-cell" onclick="innerCell(this)">
+					<p class="cell dollar">$500</p>
+					<p class="question">The smartest guy in the class.</p>
+					<p class="answer">Who is Dan?</p>
+					</div>
+			</div>
+		</div>						
+
+	</div>
+</div>
+
+<script src='javascript.js'></script>
+</body>
+</html>

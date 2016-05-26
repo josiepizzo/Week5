@@ -1,0 +1,83 @@
+body{
+	background-color: blue;
+	color: white;
+}
+
+h1{
+	font-size:30px;
+}
+
+.col-md-2{
+	float: left;
+	border-top:1px solid white;
+	border-right:0px solid white;
+	border-bottom:1px solid white;
+	border-left:1px solid white;
+  clear: both;
+  display: inline-block;
+  padding:10px;
+  width: 150px;
+}
+.col{
+	margin-top: 30px;
+	clear: both;
+	display: inline-block;
+}
+.col2{
+	margin-top: 30px;
+	clear: both;
+	display: inline-block;
+}
+.col3{
+	margin-top: 30px;
+	clear: both;
+	display: inline-block;
+}
+.col4{
+	margin-top: 30px;
+	clear: both;
+	display: inline-block;
+}
+.col5{
+	margin-top: 30px;
+	clear: both;
+	display: inline-block;
+}
+.col6{
+	margin-top: 30px;
+	clear: both;
+	display: inline-block;
+	border-right: 1px solid;
+}
+.innercell{
+	text-align: center;
+	height: 100px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+.cell{
+	padding: 5px;
+}
+.colHead{
+	font-size:32px;
+}
+.dollar{
+	font-size:32px; 
+}
+.question, .answer{
+	font-size: 32px;
+	display: none;
+	text-transform: uppercase;
+}
+#qscreen {
+display: none;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 10000px;
+width: 100%;
+background: #0000ff;
+z-index: 999;
+text-align: center;
+}
+#qscreen p { padding: 0 10% 0 10%; }
